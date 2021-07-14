@@ -38,7 +38,7 @@ table {
 }
 
 .input-div {
-    padding-top: 20px;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
 }
@@ -67,4 +67,11 @@ table {
 
 .eneble {
     background-color: grey;
+}
+
+
+.back-btn {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 20px;
 }

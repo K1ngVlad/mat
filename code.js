@@ -23,6 +23,7 @@ value = 5;
 container.appendChild(getFragment(
     createText('main-text', 'Матрица'),
     createTable('main-table', 5, 5,),
+    createButton('back-btn', 'сбросить', backMatrix),
     createinputDiv(
         ['Position x:', position.x],
         ['Position y:', position.y],
@@ -184,7 +185,8 @@ function goActived(table, step, num, matrix, arr) {
 function gogo(matrix, step, i, e, num) {
     console.log(i);
     if( e[0].status != 'eneble') {
-    e[0].value -= num;
+        if(e[0].value > num) e[0].value -= num;
+        else e[0].value = 0;
     e[0].status = 'eneble';
     }
     if(e[1] == 3 && e[2] == 0) {
@@ -249,4 +251,10 @@ function noActived(table, matrix) {
         })
     })
     fillMatrix(table, matrix);
+}
+
+function backMatrix() {
+    matrix.forEach(e => e.forEach(e => e.value = 5));
+    const table = document.querySelector('table');
+    noActived(table, matrix);
 }
