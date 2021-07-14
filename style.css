@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(140, 206, 53);
+}
+
+.main-text {
+    font-size: 60px;
+}
+
+table {
+    border-collapse: collapse;
+    /*убираем пустые промежутки между ячейками*/
+    border: 3px solid black;
+    /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+    height: 500px;
+    width: 500px;
+ }
+
+ tr, td {
+    border: 1px solid black;
+ }
+
+ tr {
+    width: 20%;
+ }
+
+ td {
+    text-align: center;
+    font-size: 40px;
+}
+
+.input-div {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-text {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.input {
+    margin-top: 30px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.input-btn {
+    font-size: 40px;
+    
+}
+
+.actived {
+    color: white;
+    background-color: black;
+}
+
+.eneble {
+    background-color: grey;
+}
